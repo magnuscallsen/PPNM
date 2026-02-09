@@ -1,0 +1,6 @@
+      float eps=1.19209e-07
+     double eps=2.22045e-16
+long double eps=1.0842e-19
+1.19209e-07
+2.22045e-16
+1.0842e-19

@@ -1,0 +1,6 @@
+Introduction
+d1==d2? false
+d1=0.79999999999999993
+d2=0.80000000000000004
+The Task
+Bool_approx(d1,d2)=true
