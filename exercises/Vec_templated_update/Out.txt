@@ -1,0 +1,19 @@
+double vectors:
+b = { 1, 2, 3 }
+c = { 1, 2, 3 }
+d = { 4, 5, 6 }
+b + d = { 5, 7, 9 }
+d - b = { 3, 3, 3 }
+2*b = { 2, 4, 6 }
+b*3 = { 3, 6, 9 }
+x after += and *= : { 4, 6, 8 }
+b dot d = 32
+b cross d = { -3, 6, -3 }
+chaining: { 7, 11, 15 }
+
+float vectors:
+bf + df = { 5, 7, 9 }
+2*bf = { 2, 4, 6 }
+bf dot df = 32
+
+All tests passed.
