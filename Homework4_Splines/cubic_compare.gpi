@@ -1,0 +1,13 @@
+set terminal pngcairo size 1200,800
+set output "cubic_compare.png"
+
+set title "My cubic spline vs gnuplot cubic spline"
+set xlabel "x"
+set ylabel "y"
+set grid
+set key top right
+
+plot \
+"cubic_spline.data" using 1:3 with lines lw 2 title "My cubic spline", \
+"points.data" using 1:2 smooth csplines with lines lw 2 title "Gnuplot cspline", \
+"points.data" using 1:2 with points pt 7 ps 1 title "Data points"

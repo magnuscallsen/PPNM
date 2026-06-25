@@ -1,0 +1,2 @@
+initial cost = 7.33646
+final cost   = 2.88316e-06

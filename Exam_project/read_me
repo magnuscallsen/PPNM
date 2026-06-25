@@ -1,0 +1,5 @@
+Adaptive two-dimensional integrator project.
+The function integ2D computes int_a^b dx int_d(x)^u(x) dy f(x,y). It uses the "one-integral" adaptive integrator which was made in Homework6. The inner integral is computed using this. The same adaptive integrator is then used again to calculate the outer integral. main.cpp contains four tests: square, triangle, quarter disk, and x*y over a triangle.
+The code is compiled and run by writing make. The integrator from Homework6 uses an adaptive recursive quadrature with two embedded open Newton–Cotes rules to estimate both the integral and its error. If the estimated error exceeds the requested tolerance (acc + eps·|Q|), the interval is split into two halves and integrated recursively. It also reuses previously computed function values, making the algorithm efficient while avoiding evaluations at the interval endpoints.
+Code is made by AI. Except for code used from earlier homeworks.
+

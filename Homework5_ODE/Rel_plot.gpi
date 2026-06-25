@@ -1,0 +1,15 @@
+set terminal pngcairo size 1000,1000
+set output "Rel_solution.png"
+
+set size square
+set xrange [-3:3]
+set yrange [-3:3]
+set grid
+set xlabel "x"
+set ylabel "y"
+set title "Relativistic precession of planetary orbit"
+
+plot \
+    "rel_circular.data" using (cos($1)/$2):(sin($1)/$2) with lines title "Newtonian circular", \
+    "rel_ellipse.data" using (cos($1)/$2):(sin($1)/$2) with lines title "Newtonian ellipse", \
+    "rel_precession.data" using (cos($1)/$2):(sin($1)/$2) with lines title "Relativistic precession"
